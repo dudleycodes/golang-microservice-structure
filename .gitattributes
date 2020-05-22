@@ -1,0 +1,4 @@
+* text=auto eol=lf encoding=utf-8
+
+*.jpg binary
+*.png binary

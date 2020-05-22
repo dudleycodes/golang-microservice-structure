@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "dtos",
+        "kubernetes",
+        "microservice",
+        "msgf"
+    ],
+    "go.enableCodeLens":{
+        "runtest": true
+    },
+    "files.encoding": "utf8",
+    "[go]": {
+        "editor.rulers": [140],
+    },
+}

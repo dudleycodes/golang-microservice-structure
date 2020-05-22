@@ -1,0 +1,65 @@
+# Ignore binaries that might get built (files without extension on Linux and Mac OS)
+/app/*/*
+!/app/**/*.*
+!/app/**/
+/cmd/*/*
+!/cmd/**/*.*
+!/cmd/**/
+
+*.log
+
+### Go ###
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.out
+*.so
+*.test
+/Godeps/
+
+### Linux Cruft ###
+*~
+.directory
+.fuse_hidden*
+.nfs*
+.Trash-*
+
+### macOS Cruft ###
+__MACOSX
+._*
+.apdisk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.com.apple.timemachine.donotpresent
+.DS_Store
+.DocumentRevisions-V100
+.fseventsd
+.LSOverride
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Icon
+Network Trash Folder
+Temporary Items
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+### Windows Cruft ###
+[Dd]esktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+$RECYCLE.BIN/
+*.lnk
