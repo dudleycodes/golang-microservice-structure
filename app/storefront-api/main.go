@@ -32,7 +32,7 @@ func main() {
 
 		fmt.Println("Ping succeeded")
 	case "start":
-		srv.Start(BindRoutes)
+		srv.Start(BuildPipeline)
 	default:
 		log.Fatal().Msgf("Unrecognized command %q, exiting.\n", *subCommand)
 	}

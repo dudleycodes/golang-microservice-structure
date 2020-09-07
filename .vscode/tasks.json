@@ -1,0 +1,19 @@
+{
+    "version":"2.0.0",
+    "tasks":[
+        {
+            "label":"Upgrade GO dependencies",
+            "type":"shell",
+            "command": "go get -u -t ./... && go mod tidy",
+            "windows": {
+                "command": "go get -u -t ./...; go mod tidy"
+            },
+            "group":"none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+        }
+    ]
+}

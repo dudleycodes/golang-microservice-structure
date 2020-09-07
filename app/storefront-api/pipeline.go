@@ -11,8 +11,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// BindRoutes builds the HTTP pipeline
-func BindRoutes(srv webserver.Server, r *mux.Router) {
+// BuildPipeline builds the HTTP pipeline
+func BuildPipeline(srv webserver.Server, r *mux.Router) {
 	r.HandleFunc("/ping", routes.Ping(srv)).Methods(http.MethodGet)
 
 	r.Use(middleware.Authentication(srv))
