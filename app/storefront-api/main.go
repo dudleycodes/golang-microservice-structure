@@ -16,7 +16,7 @@ func main() {
 
 	srv, err := webserver.New(hydratedConfig)
 
-	if err == nil {
+	if err != nil {
 		fmt.Printf("Invalid configuration: %s\n", err)
 		os.Exit(1)
 	}
